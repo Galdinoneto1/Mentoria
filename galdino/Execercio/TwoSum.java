@@ -39,6 +39,7 @@ public class TwoSum {
         nums = new int[] { 3, 2, 4 };
         target = 6;
         System.out.println("The indices of Pair: " + Arrays.toString(twoSum(nums, target)));
+        System.out.println(x);
 
     }
 }
