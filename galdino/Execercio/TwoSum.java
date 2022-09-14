@@ -1,4 +1,3 @@
-
 package galdino.Execercio;
 
 import java.util.Arrays;
@@ -6,6 +5,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{2, 7, 11, 15};
+        int target = 9;
+        System.out.println("The indices of Pair: " + Arrays.toString(twoSum(nums, target)));
+
+        nums = new int[]{3, 2, 4};
+        target = 6;
+        System.out.println("The indices of Pair: " + Arrays.toString(twoSum(nums, target)));
+
+
+    }
 
     private static int[] twoSum(int[] nums, int target) {
 
@@ -21,9 +32,7 @@ public class TwoSum {
 
                 result[1] = map.get(nums[i]);
                 break;
-            }
-
-            else {
+            } else {
 
                 map.put(target - nums[i], i);
             }
@@ -31,15 +40,5 @@ public class TwoSum {
         return result;
     }
 
-    public static void main(String[] args) {
-        int[] nums = new int[] { 2, 7, 11, 15 };
-        int target = 9;
-        System.out.println("The indices of Pair: " + Arrays.toString(twoSum(nums, target)));
 
-        nums = new int[] { 3, 2, 4 };
-        target = 6;
-        System.out.println("The indices of Pair: " + Arrays.toString(twoSum(nums, target)));
-        
-
-    }
 }
